@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Crystal Collector</title>
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div class="container-fluid text-center">
+        <span class="header">Crystals Collector!</span>
+    </div>
+     <div class="container-fluid">
+        <div class="instruction-container">
+            <p class="para-text">You will be given a random number at the start of the game.</p>
+            <p class="para-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+            <p class="para-text">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+            <p class="para-text">The value of each crystal is hidden from you until you click on it.</p>
+            <p class="para-text">Each time when the game starts, the game will change the calues of each crystal</p>
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <span class="target-number-container">40</span>
+        <span class="win-loss-container">
+            <span class="total-wins">Wins: <span class="win-score">0</span></span>
+            <span class="total-loss">Losses: <span class="loss-score">0</span></span>
+        </span>
+    </div>
+    <div class="container-fluid text-center">
+        <div class="image-container">
+            <img id="blue" src="assets/images/blue.png">
+            <img id="green" src="assets/images/green.png">
+            <img id="red" src="assets/images/red.png">
+            <img id="yellow" src="assets/images/yellow.png">
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <div class="score-container">
+            <span class="score-text">Your Total score is: </span>
+            <span class="total-number-displayed">30</span>
+        </div>
     
-    
-    
+    </div>
     <script src="assets/lib/jquery.min.js"></script>
     <script src="assets/lib/popper.min.js"></script>
     <script src="assets/lib/bootstrap.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
